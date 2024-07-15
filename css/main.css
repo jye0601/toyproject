@@ -1,1 +1,7 @@
-/* 주석 */
+#container {
+  width: 1000px;
+  margin: 10px auto;
+}
+#container img {
+  width: 100%;
+}
