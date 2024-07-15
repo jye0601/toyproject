@@ -1,7 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
 #container {
-  width: 1000px;
+  width: 1209px;
   margin: 10px auto;
 }
 #container img {
+  position: relative;
   width: 100%;
+}
+
+p {
+  font-size: 75px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgb(255, 0, 55);
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
