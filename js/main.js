@@ -4,7 +4,8 @@ const resetEl = document.getElementById("reset");
 const timerEl = document.getElementById("timer");
 
 let interval;
-let timeLeft = 1500;
+let timeLeft = 5;
+// 1500으로 바꿔주기
 
 function updateTimer() {
   let minutes = Math.floor(timeLeft / 60);
@@ -22,17 +23,24 @@ function startTimer() {
     updateTimer();
     if (timeLeft === 0) {
       clearInterval(interval);
-      alert("Time's up!");
+
+      document.querySelector("#img-wrapper > div:nth-child(1) > img").src =
+        "images/bg5.png";
+
       timeLeft = 1500;
+
       updateTimer();
     }
   }, 1000);
 }
+
 function stopTimer() {
   clearInterval(interval);
 }
 function resetTimer() {
   clearInterval(interval);
+  document.querySelector("#img-wrapper > div:nth-child(1) > img").src =
+    "images/bg25.png";
   timeLeft = 1500;
   updateTimer();
 }

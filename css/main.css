@@ -1,23 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
 #container {
+  background-image: url("/images/bg25.png");
   width: 1209px;
   margin: 10px auto;
 }
 #container img {
-  position: relative;
   width: 100%;
+  position: relative;
+}
+
+#img-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 p {
   font-size: 75px;
   font-family: "Lexend Deca", sans-serif;
   color: rgb(255, 0, 55);
-  position: absolute;
-  top: 42%;
+
+  top: 39%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: fixed;
 }
+
 button {
   font-size: 18px;
   padding: 10px 20px;
@@ -33,6 +41,9 @@ button {
 
 button:hover {
   opacity: 0.5;
+}
+
+#button-wrapper {
 }
 
 #start {
