@@ -57,3 +57,9 @@ button:hover {
 #reset {
   background-color: rgb(255, 0, 55);
 }
+
+#rest {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 55);
+  border: 1px solid rgb(255, 0, 55);
+}

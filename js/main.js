@@ -45,6 +45,23 @@ function resetTimer() {
   updateTimer();
 }
 
+function rest() {
+  interval = setInterval(() => {
+    timeLeft--;
+    updateTimer();
+    if (timeLeft === 0) {
+      clearInterval(interval);
+
+      document.querySelector("#img-wrapper > div:nth-child(1) > img").src =
+        "images/bg5.png";
+
+      timeLeft = 300;
+
+      updateTimer();
+    }
+  }, 1000);
+}
+
 startEl.addEventListener("click", startTimer);
 stopEl.addEventListener("click", stopTimer);
 resetEl.addEventListener("click", resetTimer);
