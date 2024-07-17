@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@font-face {
+  font-family: 'Panchang-Regular';
+  src: url('../fonts/Panchang-Regular.woff2') format('woff2'),
+      url('../fonts/Panchang-Regular.woff') format('woff'),
+      url('../fonts/Panchang-Regular.ttf') format('truetype').
+      font-weight : 400;
+      font-display: swap;
+      font-style: normal;
+  
+}
+
+body {
+
+  font-family: Panchang-Regular;
+}
 
 #container {
   width: 100vw;
@@ -12,7 +27,7 @@
   width: 50vmin;
   height: 60vmin;
   margin: auto;
-  background: url(../images/5.png) no-repeat left top;
+  background: url(../images/25.png) no-repeat left top;
   background-size: 100%;
   align-items: center;
   justify-content: center;
@@ -21,7 +36,7 @@
 p {
   display: inline;
   font-size: 15vmin;
-  color: #ffffff;
+  color: rgb(255, 0, 55);
   margin-bottom: 4vmin;
 }
 
@@ -62,3 +77,5 @@ button:hover {
   color: rgb(255, 0, 55);
   border: 1px solid rgb(255, 0, 55);
 }
+
+

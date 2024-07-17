@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container2 {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        border: 1px solid white;
+        background-color: #19ce60;
+      }
+      .svg {
+        display: block;
+        margin: calc(50% - 30px) auto;
+      }
+      .border {
+        fill: none;
+        stroke: white;
+        stroke-width: 3;
+        opacity: 0.3;
+      }
+      .progress {
+        fill: none;
+        stroke: rgb(255, 0, 55);
+        stroke-width: 3;
+        stroke-dasharray: 125.6;
+        stroke-dashoffset: 125.6;
+        animation: progress 2s ease-in-out infinite;
+
+        transform-origin: center;
+        transform: rotate(-90deg);
+      }
+      @keyframes progress {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <div class="container2">
+        <svg width="60" height="60" class="svg">
+          <circle r="20" cx="30" cy="30" class="border"></circle>
+          <circle r="20" cx="30" cy="30" class="progress"></circle>
+        </svg>
+      </div>
+    </body>
+  </body>
+</html>
