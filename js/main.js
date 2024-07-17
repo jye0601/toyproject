@@ -2,6 +2,7 @@ const startEl = document.getElementById("start");
 const stopEl = document.getElementById("stop");
 const resetEl = document.getElementById("reset");
 const timerEl = document.getElementById("timer");
+const reeEl = document.getElementById("rest");
 
 let interval;
 let timeLeft = 5;
@@ -46,20 +47,11 @@ function resetTimer() {
 }
 
 function rest() {
-  interval = setInterval(() => {
-    timeLeft--;
-    updateTimer();
-    if (timeLeft === 0) {
-      clearInterval(interval);
+  timeLeft = 300;
+  document.querySelector("#img-wrapper > div:nth-child(1) > img").src =
+    "images/bg5.png";
 
-      document.querySelector("#img-wrapper > div:nth-child(1) > img").src =
-        "images/bg5.png";
-
-      timeLeft = 300;
-
-      updateTimer();
-    }
-  }, 1000);
+  updateTimer();
 }
 
 startEl.addEventListener("click", startTimer);
