@@ -11,7 +11,42 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
-    <style></style>
+    <style>
+      /* 프로그래스바 css */
+      .container2 {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+      }
+      .svg {
+        display: flex;
+        margin: calc(50% - 30px) auto;
+      }
+      .border {
+        fill: none;
+        stroke: white;
+        stroke-width: 3;
+        opacity: 0.3;
+      }
+      .progress {
+        fill: none;
+        stroke: rgb(255, 0, 55);
+        stroke-width: 3;
+        stroke-dasharray: 125.6;
+        stroke-dashoffset: 125.6;
+        animation: progress 2s ease-in-out infinite;
+
+        transform-origin: center;
+        transform: rotate(-90deg);
+      }
+      @keyframes progress {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      /*  */
+    </style>
   </head>
   <body>
     <div id="container">
@@ -26,5 +61,15 @@
         <button id="rest">rest</button>
       </div>
     </div>
+
+    <!-- 프로그래스바 html -->
+
+    <div class="container2">
+      <svg width="60" height="60" class="svg">
+        <circle r="20" cx="30" cy="30" class="border"></circle>
+        <circle r="20" cx="30" cy="30" class="progress"></circle>
+      </svg>
+    </div>
+    <!-- 프로그래스바 html -->
   </body>
 </html>
