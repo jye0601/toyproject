@@ -10,7 +10,7 @@
 #img-wrapper {
   display: flex;
   width: 50vmin;
-  height: 90vmin;
+  height: 60vmin;
   margin: auto;
   background: url(../images/5.png) no-repeat left top;
   background-size: 100%;
@@ -21,8 +21,8 @@
 p {
   display: inline;
   font-size: 15vmin;
-  color: rgb(255, 255, 255);
-  margin: 0px;
+  color: #ffffff;
+  margin-bottom: 4vmin;
 }
 
 button {
