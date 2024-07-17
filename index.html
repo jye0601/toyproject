@@ -14,8 +14,6 @@
     <style>
       /* 프로그래스바 css */
       .container2 {
-        width: 200px;
-        height: 200px;
         margin: 20px auto;
       }
       .svg {
@@ -31,10 +29,10 @@
       .progress {
         fill: none;
         stroke: rgb(255, 0, 55);
-        stroke-width: 3;
-        stroke-dasharray: 125.6;
-        stroke-dashoffset: 125.6;
-        animation: progress 2s ease-in-out infinite;
+        stroke-width: 10;
+        stroke-dasharray: 628;
+        stroke-dashoffset: 628;
+        animation: progress 10s ease-in-out infinite;
 
         transform-origin: center;
         transform: rotate(-90deg);
@@ -65,9 +63,9 @@
     <!-- 프로그래스바 html -->
 
     <div class="container2">
-      <svg width="60" height="60" class="svg">
-        <circle r="20" cx="30" cy="30" class="border"></circle>
-        <circle r="20" cx="30" cy="30" class="progress"></circle>
+      <svg width="300 " height="300" class="svg">
+        <circle r="100" cx="150" cy="150" class="border"></circle>
+        <circle r="100" cx="150" cy="150" class="progress"></circle>
       </svg>
     </div>
     <!-- 프로그래스바 html -->
