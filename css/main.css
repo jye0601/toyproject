@@ -1,31 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
 #container {
-  width: 1209px;
+  width: 100vw;
   height: 100vh;
-  margin: 10px auto;
-
-  display: flex;
-}
-#container img {
-  width: 100%;
+  align-content: center;
+  justyify-content: center;
 }
 
 #img-wrapper {
-  position: relative;
+  display: flex;
+  width: 50vmin;
+  height: 90vmin;
+  margin: auto;
+  background: url(../images/5.png) no-repeat left top;
+  background-size: 100%;
   align-items: center;
-  background-image: url("http://127.0.0.1:5500/images/bg25.png");
+  justify-content: center;
 }
 
 p {
-  font-size: 75px;
-  font-family: "Lexend Deca", sans-serif;
-  color: rgb(255, 0, 55);
-
-  top: 39%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: fixed;
+  display: inline;
+  font-size: 15vmin;
+  color: rgb(255, 255, 255);
+  margin: 0px;
 }
 
 button {
