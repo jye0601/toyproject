@@ -24,6 +24,15 @@ function startTimer() {
     if (timeLeft === 0) {
       clearInterval(interval);
 
+      document.getElementById("img-wrapper").style.backgroundImage =
+        'url("../images/bg5.png")';
+
+      document.getElementById("img-wrapper").style.backgroundRepeat =
+        "no-repeat;";
+
+      document.getElementById("img-wrapper").style.backgroundPosition =
+        "left top;";
+
       timeLeft = 1500;
 
       updateTimer();
