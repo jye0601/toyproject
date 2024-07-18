@@ -24,24 +24,8 @@ function startTimer() {
     if (timeLeft === 0) {
       clearInterval(interval);
 
-      // document.getElementById("img-wrapper").style.backgroundImage =
-      //   'url("images/bg5.png")';
-
-      // document.getElementById("img-wrapper").style.backgroundRepeat =
-      //   "no-repeat;";
-
-      // document.getElementById("img-wrapper").style.backgroundPosition =
-      //   "left top;";
-
       document.getElementById("img-wrapper").style.backgroundImage =
-        'url("images/5.png")';
-
-      document.getElementById("img-wrapper").style.backgroundRepeat =
-        "no-repeat;";
-
-      document.getElementById("img-wrapper").style.backgroundPosition =
-        "left top;";
-
+        'url("images/bg5.png")';
       timeLeft = 1500;
 
       updateTimer();
@@ -54,14 +38,20 @@ function stopTimer() {
 }
 function resetTimer() {
   clearInterval(interval);
-
   document.getElementById("img-wrapper").style.backgroundImage =
-    'url("../images/bg25.png")';
+    'url("images/bg25.png")';
+
   timeLeft = 1500;
+  updateTimer();
+}
+
+function restTimer() {
+  timeLeft = 300;
+
   updateTimer();
 }
 
 startEl.addEventListener("click", startTimer);
 stopEl.addEventListener("click", stopTimer);
 resetEl.addEventListener("click", resetTimer);
-s;
+restEl.addEventListener("click", restTimer);
