@@ -19,15 +19,15 @@ body {
   width: 100vw;
   height: 100vh;
   align-content: center;
-  justyify-content: center;
+  justify-content: center;
 }
 
 #img-wrapper {
   display: flex;
-  width: 50vmin;
-  height: 60vmin;
+  width: 100vmin;
+  height: 170vmin;
   margin: auto;
-  background: url(../images/5.png) no-repeat left top;
+  background: url(../images/bg25.png) no-repeat left top;
   background-size: 100%;
   align-items: center;
   justify-content: center;
@@ -35,9 +35,11 @@ body {
 
 p {
   display: inline;
-  font-size: 15vmin;
+  font-size: 10vmin;
   color: rgb(255, 0, 55);
-  margin-bottom: 4vmin;
+  margin-bottom: -10vmin;
+  text-align: center;
+  height: 0vw;
 }
 
 button {
@@ -54,6 +56,12 @@ button {
 }
 
 #button-wrapper {
+  display: flex;
+
+  margin: 0 30 auto;  
+  background-size: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {
