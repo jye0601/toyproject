@@ -11,43 +11,6 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
-    <style>
-      /* 프로그래스바 css */
-      .container2 {
-        margin: 20px auto;
-      }
-      .svg {
-        display: flex;
-        margin: calc(50% - 30px) auto;
-      }
-      .border {
-        fill: none;
-        stroke: white;
-        stroke-width: 3;
-        opacity: 0.3;
-      }
-      .progress {
-        fill: none;
-        stroke: rgb(255, 0, 55);
-        stroke-width: 10;
-        stroke-dasharray: 628;
-        stroke-dashoffset: 628;
-        animation: progress 1500s ease-in-out infinite;
-        /* 1500s > 25분 300s > 5분 */
-        /* 628 = 밑에 설정한 반지름 * 2 * 파이 
-        이거 해야 원 모양으로 회전*/
-
-        transform-origin: center;
-        transform: rotate(-90deg);
-      }
-      @keyframes progress {
-        100% {
-          stroke-dashoffset: 0;
-        }
-      }
-
-      /*  */
-    </style>
   </head>
   <body>
     <div id="container">
@@ -61,15 +24,5 @@
         <button id="reset">reset</button>
       </div>
     </div>
-
-    <!-- 프로그래스바 html -->
-
-    <div class="container2">
-      <svg width="300 " height="300" class="svg">
-        <circle r="100" cx="150" cy="150" class="border"></circle>
-        <circle r="100" cx="150" cy="150" class="progress"></circle>
-      </svg>
-    </div>
-    <!-- 프로그래스바 html -->
   </body>
 </html>

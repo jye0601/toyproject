@@ -53,6 +53,7 @@ button {
   cursor: pointer;
   text-transform: uppercase;
   transition: opacity 0.3s ease-in-out;
+  
 }
 
 #button-wrapper {
@@ -60,8 +61,8 @@ button {
 
   margin: 0 30 auto;  
   background-size: 100%;
-  align-items: center;
   justify-content: center;
+
 }
 
 button:hover {
