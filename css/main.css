@@ -10,24 +10,14 @@
   
 }
 
+
+
 body {
 
   font-family: Panchang-Regular;
 }
 
 
-img{
-  width: 5vw;
-  align-content: center;
-  justify-content: center;
-  padding-left: 185px;
-  padding-top: 30px;
-  position:absolute;
-  margin: auto;
-
-
-
-}
 
 #container {
   width: 100vw;
@@ -56,6 +46,8 @@ p {
   text-align: center;
   height: 0vw;
 }
+
+
 
 button {
   font-size: 18px;
@@ -101,5 +93,3 @@ button:hover {
   color: rgb(255, 0, 55);
   border: 1px solid rgb(255, 0, 55);
 }
-
-
