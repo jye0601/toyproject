@@ -24,16 +24,23 @@ function startTimer() {
     if (timeLeft === 0) {
       clearInterval(interval);
 
+      // document.getElementById("img-wrapper").style.backgroundImage =
+      //   'url("images/bg5.png")';
+
+      // document.getElementById("img-wrapper").style.backgroundRepeat =
+      //   "no-repeat;";
+
+      // document.getElementById("img-wrapper").style.backgroundPosition =
+      //   "left top;";
+
       document.getElementById("img-wrapper").style.backgroundImage =
-        'url("../images/bg5.png")';
+        'url("images/5.png")';
 
       document.getElementById("img-wrapper").style.backgroundRepeat =
         "no-repeat;";
 
       document.getElementById("img-wrapper").style.backgroundPosition =
         "left top;";
-
-      document.getElementById("body").style.font = "color: white";
 
       timeLeft = 1500;
 

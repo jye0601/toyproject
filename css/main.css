@@ -15,6 +15,20 @@ body {
   font-family: Panchang-Regular;
 }
 
+
+img{
+  width: 5vw;
+  align-content: center;
+  justify-content: center;
+  padding-left: 185px;
+  padding-top: 30px;
+  position:absolute;
+  margin: auto;
+
+
+
+}
+
 #container {
   width: 100vw;
   height: 100vh;
@@ -24,20 +38,21 @@ body {
 
 #img-wrapper {
   display: flex;
-  width: 100vmin;
-  height: 170vmin;
+  width: 70vmin;
+  height: 110vmin;
   margin: auto;
-  background: url(../images/bg25.png) no-repeat left top;
+  background: url(../images/25.png) no-repeat left top;
   background-size: 100%;
   align-items: center;
   justify-content: center;
+ 
 }
 
 p {
   display: inline;
   font-size: 10vmin;
   color: rgb(255, 0, 55);
-  margin-bottom: -10vmin;
+  margin-bottom: 40vmin;
   text-align: center;
   height: 0vw;
 }
