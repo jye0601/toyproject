@@ -33,6 +33,8 @@ function startTimer() {
       document.getElementById("img-wrapper").style.backgroundPosition =
         "left top;";
 
+      document.getElementById("body").style.font = "color: white";
+
       timeLeft = 1500;
 
       updateTimer();
@@ -45,6 +47,9 @@ function stopTimer() {
 }
 function resetTimer() {
   clearInterval(interval);
+
+  document.getElementById("img-wrapper").style.backgroundImage =
+    'url("../images/bg25.png")';
   timeLeft = 1500;
   updateTimer();
 }
